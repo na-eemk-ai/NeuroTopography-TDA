@@ -1,0 +1,109 @@
+{
+  "project": "NeuroTopography",
+  "version": "1.0",
+  "generated_at": "2026-04-30 12:15:40 UTC",
+  "source": "mixed (real + synthetic fallback)",
+  "image_size": [
+    256,
+    256
+  ],
+  "image_mode": "L (grayscale)",
+  "image_format": "PNG",
+  "preprocessing": {
+    "gaussian_sigma": 0.8,
+    "contrast_enhancement": true,
+    "normalisation": "uint8 [0, 255]",
+    "resize_filter": "Lanczos"
+  },
+  "classes": {
+    "glioma": {
+      "count": 10,
+      "files": [
+        "glioma_001.png",
+        "glioma_002.png",
+        "glioma_003.png",
+        "glioma_004.png",
+        "glioma_005.png",
+        "glioma_006.png",
+        "glioma_007.png",
+        "glioma_008.png",
+        "glioma_009.png",
+        "glioma_010.png"
+      ]
+    },
+    "meningioma": {
+      "count": 10,
+      "files": [
+        "meningioma_001.png",
+        "meningioma_002.png",
+        "meningioma_003.png",
+        "meningioma_004.png",
+        "meningioma_005.png",
+        "meningioma_006.png",
+        "meningioma_007.png",
+        "meningioma_008.png",
+        "meningioma_009.png",
+        "meningioma_010.png"
+      ]
+    },
+    "pituitary": {
+      "count": 10,
+      "files": [
+        "pituitary_001.png",
+        "pituitary_002.png",
+        "pituitary_003.png",
+        "pituitary_004.png",
+        "pituitary_005.png",
+        "pituitary_006.png",
+        "pituitary_007.png",
+        "pituitary_008.png",
+        "pituitary_009.png",
+        "pituitary_010.png"
+      ]
+    },
+    "normal": {
+      "count": 10,
+      "files": [
+        "normal_001.png",
+        "normal_002.png",
+        "normal_003.png",
+        "normal_004.png",
+        "normal_005.png",
+        "normal_006.png",
+        "normal_007.png",
+        "normal_008.png",
+        "normal_009.png",
+        "normal_010.png"
+      ]
+    }
+  },
+  "validation": {
+    "total": 40,
+    "valid": 40,
+    "errors": [],
+    "classes": {
+      "glioma": {
+        "count": 10,
+        "errors": []
+      },
+      "meningioma": {
+        "count": 10,
+        "errors": []
+      },
+      "pituitary": {
+        "count": 10,
+        "errors": []
+      },
+      "normal": {
+        "count": 10,
+        "errors": []
+      }
+    }
+  },
+  "citations": {
+    "figshare": "Cheng, J. (2017). Brain tumor dataset [Data set]. figshare. https://doi.org/10.6084/m9.figshare.1512427.v5  License: CC BY 4.0",
+    "kaggle": "Nickparvar, M. (2021). Brain Tumor MRI Dataset [Data set]. Kaggle. https://www.kaggle.com/datasets/masoudnickparvar/brain-tumor-mri-dataset  License: CC BY-SA 4.0",
+    "mendeley": "Msoud et al. (2021). Brain Tumor MRI Dataset [Data set]. Mendeley Data. https://doi.org/10.17632/zwr4ntf94j.6  License: CC BY 4.0"
+  },
+  "tda_notes": "Images pre-processed for GUDHI Vietoris-Rips persistent homology. Recommended threshold range: 80-140. Recommended Gaussian sigma for point cloud: 1.0-1.5. Expected β₁ values: normal≈1, meningioma≈1-2, pituitary≈2-3, glioma≥3."
+}
