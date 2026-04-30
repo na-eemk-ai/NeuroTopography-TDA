@@ -1090,7 +1090,7 @@ with st.sidebar:
     st.markdown("### โหมดการสแกน")
 
     mode_options = ["🔬  Batch Case Scanning", "🖼️  อัพโหลดภาพ MRI"]
-    mode_sel = st.radio("", mode_options, label_visibility="collapsed", key="mode_radio")
+    mode_sel = st.radio("เลือกโหมด", mode_options, label_visibility="visible", key="mode_radio")
     st.session_state.mode = "batch" if "Batch" in mode_sel else "upload"
 
     # Tooltip descriptions
